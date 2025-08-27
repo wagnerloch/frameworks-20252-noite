@@ -12,6 +12,10 @@ export default function Index() {
     >
       <Text>Olá mundo!</Text>
       <Link href={"/config"}>Ir para CONFIGURAÇÕES</Link>
+      <Link href={{
+        pathname: "/users/[id]",
+        params: { id: 123, name: "Wagner" }
+      }}>Ir para Usuário 123</Link>
     </View>
   );
 }
