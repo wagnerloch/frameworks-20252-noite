@@ -1,7 +1,7 @@
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function Index() {
+export default function LoginScreen() {
   return (
     <View
       style={{
@@ -10,8 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Config!</Text>
-      <Link href={"/users/123"}>Ir para Usuário 123</Link>
+      <Text>LOGIN!</Text>
     </View>
   );
 }

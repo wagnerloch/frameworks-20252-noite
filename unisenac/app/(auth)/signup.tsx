@@ -1,7 +1,7 @@
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function UsersScreen() {
+export default function SignupScreen() {
   return (
     <View
       style={{
@@ -10,8 +10,7 @@ export default function UsersScreen() {
         alignItems: "center",
       }}
     >
-      <Text>Tela de Usuários</Text>
-      <Link href={"/projects"}>Ir para PROJETOS</Link>
+      <Text>SIGNUP!</Text>
     </View>
   );
 }
