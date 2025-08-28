@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Button, Image, Text, TextInput, View } from "react-native";
 
 export default function LoginScreen() {
   return (
@@ -10,7 +10,15 @@ export default function LoginScreen() {
         alignItems: "center",
       }}
     >
-      <Text>LOGIN!</Text>
+      <Text style={{ fontSize: 48, fontWeight: "bold" }}>SUPER PROJETOS</Text>
+      <Image
+        source={{ uri: "https://icons.veryicon.com/png/o/internet--web/webapp-1/user-login-2.png" }}
+        style={{ width: 200, height: 200 }}
+      />
+      <TextInput placeholder="Digite seu email" />
+      <TextInput placeholder="Digite sua senha" secureTextEntry />
+      <Button title="Login" onPress={() => {}} />
+      <Link href={"/signup"}>Não tem uma conta? Crie uma</Link>
     </View>
   );
 }
